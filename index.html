@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diabetes-Remission: Faktencheck</title>
+<meta name="description" content="Kann Typ-2-Diabetes durch Ernährung und Fasten ohne Medikamente zurückgehen? Verifizierte Evidenz, Fehlerquellen und ein ehrliches Fazit.">
+<style>
+:root{
+  --bg:#faf8f4;
+  --ink:#1b1814;
+  --muted:#6f675b;
+  --line:#e7e0d3;
+  --card:#ffffff;
+  --accent:#0f766e;
+  --accent-soft:#e7f2ef;
+  --good:#0f766e;
+  --warn:#9a5b12;
+  --warn-soft:#f6ecdd;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14120f;
+    --ink:#ece7dd;
+    --muted:#9d9487;
+    --line:#2a261f;
+    --card:#1c1915;
+    --accent:#2aa89d;
+    --accent-soft:#15302c;
+    --good:#35b3a8;
+    --warn:#d7954a;
+    --warn-soft:#2c2214;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14120f;
+  --ink:#ece7dd;
+  --muted:#9d9487;
+  --line:#2a261f;
+  --card:#1c1915;
+  --accent:#2aa89d;
+  --accent-soft:#15302c;
+  --good:#35b3a8;
+  --warn:#d7954a;
+  --warn-soft:#2c2214;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 64px}
+header{padding:40px 0 8px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:40px;line-height:1.1;margin:8px 0 14px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);margin:0}
+.lead strong{color:var(--ink)}
+section{margin-top:40px}
+h2{font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:600}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:none}
+td .name{font-weight:600;color:var(--ink)}
+td .meta{color:var(--muted);font-size:12.5px}
+.grade{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.g-strong{background:var(--accent-soft);color:var(--good)}
+.g-mid{background:var(--warn-soft);color:var(--warn)}
+.g-weak{background:var(--line);color:var(--muted)}
+.mech{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.mech p{margin:0 0 10px}
+.mech p:last-child{margin:0}
+.mech strong{color:var(--accent)}
+ul{margin:0;padding-left:0;list-style:none}
+ul li{padding:9px 0 9px 24px;position:relative;border-bottom:1px solid var(--line);font-size:15px}
+ul li:last-child{border-bottom:none}
+ul li:before{content:"";position:absolute;left:4px;top:17px;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.verdict{background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:20px 22px}
+.verdict .big{font-size:22px;font-weight:700;letter-spacing:-.01em;margin:0 0 8px}
+.verdict p{margin:0;font-size:15.5px}
+.foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:4px}
+@media(max-width:600px){
+  h1{font-size:31px}
+  .lead{font-size:17px}
+  table{display:block;overflow-x:auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Metabolische Therapie · Faktencheck</div>
+  <h1>Diabetes-Remission ohne Medikamente</h1>
+  <p class="lead">Kann Typ-2-Diabetes durch Ernährung und Fasten zurückgehen? <strong>Ja, das ist gut belegt.</strong> Aber es ist kein Wunder und keine Neuentdeckung. Stand: 08.10.2026.</p>
+</header>
+
+<section>
+  <h2>Die harte Evidenz (verifiziert)</h2>
+  <table>
+    <tr><th>Studie</th><th>n</th><th>Methode</th><th>Ergebnis</th><th>Evidenz</th></tr>
+    <tr>
+      <td><span class="name">DiRECT</span><br><span class="meta">Taylor, Lancet 2018</span></td>
+      <td>298</td>
+      <td>825–853 kcal/Tag, 3–5 Monate</td>
+      <td>Remission 46 % vs. 4 % (1 J), 36 % (2 J), 13 % (5 J, Extension-Teilnehmer). Ab 15 kg Verlust: 86 %.</td>
+      <td><span class="grade g-strong">RCT</span></td>
+    </tr>
+    <tr>
+      <td><span class="name">Virta Health</span><br><span class="meta">Hallberg 2018</span></td>
+      <td>262</td>
+      <td>Keto + ärztliches Absetzen</td>
+      <td>HbA1c 7,6 → 6,3 %. 94 % der Insulinnutzer senkten oder stoppten Insulin.</td>
+      <td><span class="grade g-mid">offen, nicht randomisiert</span></td>
+    </tr>
+    <tr>
+      <td><span class="name">Westman</span><br><span class="meta">2008</span></td>
+      <td>84</td>
+      <td>Keto &lt;20 g vs. low-GI</td>
+      <td>HbA1c −1,5 vs. −0,5 %. Medikamente reduziert/weg bei 95 % vs. 62 %.</td>
+      <td><span class="grade g-strong">RCT</span></td>
+    </tr>
+    <tr>
+      <td><span class="name">Unwin (Praxis)</span><br><span class="meta">BMJ Nutrition 2020</span></td>
+      <td>128</td>
+      <td>Low Carb, Hausarzt</td>
+      <td>HbA1c 8,1 → 6,5 %. Bis 46 % medikamentenfreie Remission.</td>
+      <td><span class="grade g-mid">Praxisdaten</span></td>
+    </tr>
+    <tr>
+      <td><span class="name">Goldhamer</span><br><span class="meta">2001 · Hypertonie</span></td>
+      <td>174</td>
+      <td>10–14 Tage Wasserfasten, stationär</td>
+      <td>~90 % unter 140/90. Im Mittel −37/−13 mmHg.</td>
+      <td><span class="grade g-weak">unkontrolliert</span></td>
+    </tr>
+    <tr>
+      <td><span class="name">Ornish</span><br><span class="meta">JAMA 1998 · Herz</span></td>
+      <td>48</td>
+      <td>fettarm-vegetarisch, Sport, Stress</td>
+      <td>Nach 5 Jahren Stenose −3,1 vs. +11,8 Punkte in der Kontrolle.</td>
+      <td><span class="grade g-mid">kleine RCT</span></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Warum das funktioniert</h2>
+  <div class="mech">
+    <p>Der Mechanismus ist verstanden und heißt <strong>Twin-Cycle</strong> (Roy Taylor, Newcastle): Kalorienüberschuss lagert Fett in Leber und Bauchspeicheldrüse ein, die Betazellen drosseln die Insulinproduktion.</p>
+    <p>Wer etwa <strong>15 kg</strong> abnimmt, entfettet beide Organe — die Insulinproduktion erholt sich bei vielen. Das erklärt auch, warum die Methode egal ist: <strong>Es ist der Gewichtsverlust, nicht "Keto" oder "Fasten" an sich.</strong> Nicht jeder erreicht Remission; je länger die Krankheit besteht, desto unwahrscheinlicher.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Was die Podcasts verschweigen</h2>
+  <ul>
+    <li><strong>Chirurgie schlägt alles:</strong> Magenbypass erreicht in STAMPEDE (NEJM 2017) nach 5 Jahren 29 % Remission — gegen 5 % bei medikamentöser Therapie. Ernährung ist nicht der einzige Weg.</li>
+    <li><strong>GLP-1 (Ozempic & Co.) tut dasselbe per Medikament:</strong> ~15 % Gewichtsverlust. Gleiche Logik, aber das Gewicht kehrt nach dem Absetzen meist zurück.</li>
+    <li><strong>Die Podcast-Ebene ist die schwächste:</strong> Gary Breckas Dana-White-Fall hat keine Laborkontrolle, die Karnivoren-Umfrage ist Selbstauskunft mit Selektionsbias. "William Paul" — der Ausgangspunkt der Recherche — konnte bis heute nicht identifiziert werden.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Fehlerquellen</h2>
+  <ul>
+    <li>Podcast-Zitate ungeprüft: Transkripte waren nicht abrufbar, Episoden-Zuordnungen stammen aus Kanallisten.</li>
+    <li>Viele Kohorten (Virta, Unwin, Esselstyn) sind nicht randomisiert — Selbstselektion verzerrt nach oben.</li>
+    <li>Kaum eine Studie trennt Low Carb/Keto vom schlichten Kaloriendefizit.</li>
+    <li>Einzelfälle (Seyfried, McLelland) sind Anekdoten mit Zusatztherapien, kein Beleg.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="verdict">
+    <p class="big">Ehrliches Fazit: real, aber kein Wunder.</p>
+    <p>Diabetes-Remission durch Gewichtsverlust ist reproduzierbar, mechanistisch erklärt und erreicht dieselben Ergebnisse wie Chirurgie oder GLP-1-Medikamente. Das Außergewöhnliche ist nicht die Biologie, sondern dass es <strong>untergenutzt</strong> ist: Kaum jemand bekommt Remission überhaupt als Ziel angeboten. Wer es als "revolutionäre Einzellösung" verkauft (und meist Supplements dazu), erzählt nur die halbe Geschichte.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  Alle 17 PubMed-Links dieser Recherche wurden am 08.10.2026 über die NCBI-API geprüft — Titel, Autoren, Journal und Jahr stimmen. Quelle im Vault: <code>workspace/research/2026-10-08-metabolische-therapie-use-cases-deep-search.md</code>
+</footer>
+
+</div>
+</body>
+</html>
